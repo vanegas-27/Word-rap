@@ -1,16 +1,13 @@
-.main-tables-container {
-    display: flex;
-    width: 930px;
-    margin: 0 auto;
-    
+.perso{
+    justify-content: center;
 }
 
-/* .main-product-detail {
+
+.main-product-detail {
     display: flex;
     flex-wrap: wrap;
-    width: 930px;
-    margin: 0 auto;
-} */
+    justify-content: center;
+}
 
 .plans-container--slider {
     justify-content: center;

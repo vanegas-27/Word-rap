@@ -193,6 +193,8 @@ main {
 
 .main-tables-container{
     margin-bottom: 25px;
+    scroll-snap-align: center;
+    margin: 0px 20px;
 }
 
 .currency-table--container {
@@ -563,4 +565,14 @@ footer .left ul {
 .left a {
     text-decoration: none;
     color: var(--just-white);
+}
+
+/**/
+
+.perso{
+    display: flex;
+    height: 400px;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }

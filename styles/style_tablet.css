@@ -1,14 +1,26 @@
-.main-tables{
-    justify-content: center;
+.main-exchange-container .backgroundImg:hover{
+    filter:none;
+    cursor: pointer;
+    height: 290px;
+    transition: 0.5s;
 }
 
 
+/*
+este nos sirve para darle estilo a las tarjetas de decripcion
+a medida que crecen 
+*/
 .main-product-detail {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    flex-wrap:wrap;
+
 }
 
-.plans-container--slider {
-    justify-content: center;
+.product-cards--container{
+    flex-basis:auto;
+    margin: 0px auto;
 }
+/*
+hasta aca son los estilos
+*/
+

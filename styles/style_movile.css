@@ -39,10 +39,12 @@ pasos para acomodar los estilos
     margin: 0;
     margin: 0;
 }
-html{
+
+html {
     font-family: 62.5%;
     font-family: 'Noto Sans', sans-serif;
-    scroll-behavior: smooth; /*para que al hacer scroll no baje al golpe*/
+    scroll-behavior: smooth;
+    /*para que al hacer scroll no baje al golpe*/
 }
 
 header {
@@ -54,14 +56,16 @@ header {
     min-width: 324px;
     height: 334px;
     text-align: center;
-    background: linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+    background: linear-gradient(207.8deg, #8a8787 16.69%, #06131f 100%);
 }
 
 header img {
     width: 150px;
-    height: 24px;
+    height: 150px;
     margin-top: 60px;
     align-self: center;
+    background-color: #2b28281c;
+    border-radius: 50%;
 }
 
 .header_title_container {
@@ -76,17 +80,18 @@ header img {
 .header_title_container h1 {
     font-size: 2.4rem;
     font-weight: bold;
-    line-height: 2.6rem;
-    color: var(--just-white);
-} */
+    line-height: 3rem;
+    color: var(--bitcoin-orange);
+}
 
 .header_title_container p {
-    margin-top: 25px;
+    color: var(--grey);
+    padding-bottom: 50px;
     font-size: 1.4rem;
     font-weight: 500;
     line-height: 1.8rem;
-    color: var(--soft-orange)
 }
+
 
 /* .header_title_container .header_button {
 	position: absolute;
@@ -102,7 +107,7 @@ header img {
     display: block;
     margin-top: 45px;
     padding: 15px;
-    width: 229px;
+    width: auto;
     height: 48px;
     background-color: var(--off-white);
     /*Sombra*/
@@ -135,27 +140,73 @@ main {
     width: 100%;
     height: auto;
     padding-top: 80px;
-    padding-bottom: 30px;
+    padding-bottom: 50px;
     text-align: center;
+}
+
+.container_artistas{
+    display: flex;
+    align-items: center;
+    overflow-x: scroll;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x proximity;
 }
 
 .main-exchange-container--title {
     width: 90%;
     min-width: 288px;
     max-width: 900px;
-    margin: 0 auto;
+    margin: 20px auto;
 }
 
 .main-exchange-container .backgroundImg {
-    width: 200px;
-    height: 200px;
-    margin: 0 auto;
+    height: 250px;
+    width: 250px;
+    min-width: 250px;
+    margin: 0 40px;
     margin-bottom: 50px;
-    background-image: url("../assets/img/Bitcoin.svg");
+    border-radius: 50%;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+    filter: blur(2px);
+    transition: 0.5s;
 }
+
+
+.main-exchange-container .backgroundImg:hover{
+    filter:none;
+    cursor: pointer;
+    width: 300px;
+    height: 280px;
+    transition: 0.5s;
+}
+.container_artistas .backgroundImg:nth-child(2){
+    background-image: url(../assets/img/newFotos/foto_no_exif\ \(14\).jpg);
+}
+
+.container_artistas .backgroundImg:nth-child(1){
+    background-image: url(../assets/img/newFotos/foto_no_exif\ \(4\).jpg);
+    padding-top: 70PX;
+}
+
+.container_artistas .backgroundImg:nth-child(3){
+    background-image: url(../assets/img/newFotos/foto_no_exif\ \(10\).jpg);
+}
+
+.container_artistas .backgroundImg:nth-child(4){
+    background-image: url(../assets/img/newFotos/granuja.jpg);
+}
+
+.container_artistas .backgroundImg:nth-child(5){
+    background-image: url(../assets/img/newFotos/zof_ziro_por.jpg);
+}
+
+.container_artistas .backgroundImg:nth-child(6){
+    background-image: url(../assets/img/newFotos/metricas.jpg);
+}
+
+
 
 .main-exchange-container h2 {
     margin-bottom: 30px;
@@ -167,10 +218,10 @@ main {
 
 .main-exchange-container p {
     margin-bottom: 30px;
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: 1.3rem;
+    font-weight: bold;
     line-height: 1.6rem;
-    color: #757575;
+    color: #646464;
 }
 
 
@@ -188,9 +239,10 @@ main {
     font-size: 1.8rem;
     font-weight: bold;
     line-height: 2.3rem;
-    color: var(--bitcoin-orange);
+    color: #d46a14;
 }
-.main-tables{
+
+.main-tables {
     display: flex;
     height: 400px;
     overflow-x: scroll;
@@ -198,11 +250,45 @@ main {
     scroll-snap-type: x proximity;
 }
 
-.main-tables-container{
+.main-tables-container {
     margin-bottom: 25px;
     scroll-snap-align: center;
     margin: 0px 20px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 15px;
 }
+.main-tables-container:nth-child(1){
+    background-image: url("../assets/img/newFotos/foto_no_exif\ \(11\).jpg");
+    opacity: 0.8;
+}
+.main-tables-container:nth-child(2){
+    background-image: url("../assets/img/newFotos/foto_no_exif\ \(12\).jpg");
+    opacity: 0.8;
+}
+.main-tables-container:nth-child(3){
+    background-image: url("../assets/img/newFotos/foto_no_exif\ \(3\).jpg");
+    opacity: 0.8;
+}
+.main-tables-container:nth-child(4){
+    background-image: url("../assets/img/newFotos/fondo_granuja.jpg");
+    opacity: 0.8;
+}
+.main-tables-container:nth-child(5){
+    background-image: url("../assets/img/newFotos/fondo_zof_ziro.png");
+    opacity: 0.8;
+}
+.main-tables-container:nth-child(6){
+    background-image: url("../assets/img/newFotos/fondo_metricas.jpg");
+    opacity: 0.8;
+}
+.main-tables-container:hover{
+    opacity:1;
+}
+
+
+
 
 .currency-table--container {
     width: 90%;
@@ -219,31 +305,35 @@ main {
 
 .currency-table--container td {
     width: 50%;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     font-weight: 500;
     line-height: 1.9rem;
-    color: var(--grey);
-    background-color: var(--just-white);
+    color: var(--just-white);
+    background-color:transparent;
 }
 
 .currency-table--container .table__top-left {
     border-radius: 15px 0 0 0;
 }
+
 .currency-table--container .table__top-right {
     border-radius: 0 15px 0 0;
 }
+
 .currency-table--container .table__bottom-left {
     border-radius: 0 0 0 15px;
 }
+
 .currency-table--container .table__bottom-right {
     border-radius: 0 0 15px 0;
 }
 
 .currency-table--container .table__right {
-    font-size: 1.4rem;
-    font-weight: normal;
+    font-size: 1.1rem;
+    font-weight: bold;
     line-height: 1.7rem;
-    color: #757575;
+    color: rgb(219, 115, 30);
+    min-width: 10px;
 }
 
 .currency-table--container .down {
@@ -269,39 +359,46 @@ main {
 }
 
 .currency-table--date {
-    width: 235px;
+    width: auto;
     height: 30px;
     margin: 0 auto;
     margin-top: 15px;
     padding: 8px;
-    background-color: var(--soft-orange);
+    background-color: rgba(32, 32, 32, 0.849);
     border-radius: 8px;
     align-items: center;
 }
+
 .currency-table--date p {
     font-size: 1rem;
     line-height: 1.5rem;
-    color: var(--warm-black);
+    color: rgb(255, 253, 253);
 }
 
 
-.main-product-detail{
+.main-product-detail {
     position: relative;
     /*lineas puestas por mi*/
     background-color: var(--warm-black);
     color: var(--just-white);
     margin: 0px auto;
     padding-bottom: 15px;
-    
+
 }
+
 .product-detail--batata-logo {
-    left: calc(50% - 20px);
+    left: calc(50% - 50px);
     position: absolute;
-    top: -15px;
-    width: 40px;
-    height: 25px;
+    top: -50px;
+    width: 100px;
+    height: 100px;
     z-index: 1;
-    background-image: url("../assets/icons/batata.svg");
+    background-image: url("../assets/img/newFotos/posterior2-removebg-preview.png");
+    background-color: #727575c0;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 .product-detail--title {
@@ -317,6 +414,7 @@ main {
 }
 
 .product-detail--title h2 {
+    margin-top: 20px;
     margin-bottom: 20px;
     font-size: 2.4rem;
     font-weight: bold;
@@ -334,55 +432,87 @@ main {
 
 .product-detail--card {
     width: 90%;
-    min-width: 288px;
-    max-width: 400px;
+    min-height: 300px;
+    min-width: 350px;
+    max-width: 300px;
     height: auto;
     margin: 15px auto;
     padding: 15px;
     background-color: var(--black);
     border-radius: 5px;
-    box-shadow:  2px 5px 8px rgba(255, 255, 255, 0.445);
+    box-shadow: 0px 0px 2px #359ebe ;
     overflow: hidden;
+    opacity: 0.3;
+    filter: blur(1px);
+}
+
+.product-detail--card:hover{
+    box-shadow: 2px 2px 3px #868686;
+    filter: none;
+    opacity: 1;
 }
 
 
 
-.product-detail--card .clock {
+.product-detail--card .big {
     display: inline-block;
-    width: 20px;
-    height: 20px;
-    margin-bottom: 10px;
-    background-image: url("../assets/icons/eye.svg");
+    width: 100px;
+    height: 100px;
+    background-image: url("../assets/img/newFotos/sin_fondo/big.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.product-detail--card .eye {
+
+.product-detail--card .Alcolirykoz {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 10px;
-    background-image: url("../assets/icons/eye.svg");
+    background-image: url("../assets/img/newFotos/sin_fondo/foto_no_exif\ \(18\).jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.product-detail--card .dollar {
+
+.product-detail--card .Noiseferatu {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 10px;
-    background-image: url("../assets/icons/dollar-sign.svg");
+    background-image: url("../assets/img/newFotos/sin_fondo/foto_no_exif\ \(17\).jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
 }
-.product-detail--card .circle {
+
+.product-detail--card .Granuja {
     display: inline-block;
-    width: 20px;
-    height: 20px;
+    width: 100px;
+    height: 100px;
     margin-bottom: 10px;
-    background-image: url("../assets/icons/check-circle.svg");
+    background-image: url("../assets/img/newFotos/sin_fondo/granuja.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.product-detail--card .Zof-ziro {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    background-image: url("../assets/img/newFotos/sin_fondo/zof_ziro2.png");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.product-detail--card .Metricas {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-bottom: 10px;
+    background-image: url("../assets/img/newFotos/sin_fondo/metricas_sin.png");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -390,17 +520,18 @@ main {
 
 .product--card-title {
     margin-bottom: 15px;
-    font-size: 1.3rem;
+    font-size: 1.5rem;
     font-weight: bold;
     line-height: 1.6rem;
-    color: var(--just-white);
+    color: var(--bitcoin-orange);
 }
 
 .product--card-body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 1rem;
-    font-weight: 500;
+    /* font-weight: bold; */
     line-height: 1.8rem;
-    color: #808080;
+    color: var(--just-whitek);
 }
 
 .bitcoin-img-container {
@@ -408,7 +539,7 @@ main {
     width: 100%;
     min-width: 320px;
     height: 50vh;
-    background-image: url("../assets/img/bitcoinbaby2x.jpg");
+    background-image: url("../assets/img/newFotos/fondo.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -443,15 +574,15 @@ main {
 .plans--title h2 {
     padding-top: 50px;
     font-size: 2.4rem;
-    font-weight: bold;
+    font-weight:bold;
     line-height: 2.6rem;
     color: var(--black);
 }
 
 .plans--title p {
     padding-top: 30px;
-    font-size: 1.4rem;
-    font-weight: 500;
+    font-size: 1.2rem;
+    font-weight: bold;
     line-height: 1.8rem;
     color: #757575;
 }
@@ -465,21 +596,49 @@ main {
 
 }
 
+
 .plans-container--card {
     position: relative;
     scroll-snap-align: center;
     width: 70%;
     min-width: 300px;
-    max-width: 300px;
     height: 250px;
     margin: 50px 15px 0;
     padding: 0 15px;
-    background-color: var(--just-white);
     border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+    box-shadow: 0 4px 3px rgba(0, 0, 0, 0.411);
+    transition: 0.5s;
+}
+
+.plans-container--card:hover{
+    background-color: #e4e2e2;
+    margin: 15px;
+    cursor: default;
+    transition: 0.5s;
 }
 
 .recomended {
+    position: absolute;
+    width: 128px;
+    height: 31px;
+    left: calc(50% - 60px);
+    font-size: 1.2rem;
+    padding: 1px;
+    background-color: var(--black);
+    border-radius: 8px;
+    color: var(--grey);
+    top: -15px;
+    transition: 0.5s;
+}
+.recomended:hover{
+    width: 150px;
+    height: 33px;
+    box-shadow: 0px 3px 3px rgb(31, 31, 31);
+    cursor: default;
+    transition: 0.5s;
+    color: var(--just-white);
+}
+.premiun{
     position: absolute;
     width: 128px;
     height: 31px;
@@ -490,7 +649,17 @@ main {
     border-radius: 8px;
     color: var(--just-white);
     top: -15px;
-
+    transition: 0.5s;
+}
+.premiun:hover{
+    font-size: 22px;
+    width: 150px;
+    height: 33px;
+    box-shadow: 0px 3px 3px rgb(31, 31, 31);
+    cursor: default;
+    transition: 0.5s;
+    color: var(--black);
+    font-weight: bold;
 }
 
 .plan-card--title {
@@ -519,21 +688,28 @@ main {
 
 .plan-card--saving {
     font-size: 1.3rem;
-    color: #757575;
+    color: #414040;
+    font-family:Arial, Helvetica, sans-serif;
 }
 
 .plan-card--ca {
     width: auto;
     height: 45px;
-    margin-top: 12px;
-    background-color: #faf8f7;
-    border: 2px solid var(--bitcoin-orange);
-    border-radius: 4px;
-    font-family: 'DM Sans', sans-serif;
-    font-size: 1.2rem;
+    margin-top: 20px;
+    background-color: #e4e3e3;
+    border: 2px solid var(--black);
+    border-radius: 7px;
+    font-family:Arial;
+    font-size: 1.1rem;
     font-weight: bold;
     line-height: 1.8rem;
     color: var(--black);
+}
+.plan-card--ca:hover{
+    background-color: var(--black);
+    color: var(--just-white);
+    transition: 0.2s;
+    cursor: pointer;
 }
 
 
@@ -562,18 +738,19 @@ footer section {
 }
 
 footer .left ul {
-    display:inline-flex;
-    font-size: 1.4rem;
+    display: inline-flex;
+    font-size: 1.5rem;
     font-weight: 500;
     line-height: 1.8rem;
     list-style: none;
-} 
+    cursor: pointer;
+}
 
 .left li {
     margin: 0px 10px;
 }
-
-/* .left a {
-    text-decoration: none;
-    color: var(--just-white);
-} */
+.img_footer{
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+ }
